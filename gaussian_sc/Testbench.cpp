@@ -119,56 +119,6 @@ int Testbench::write_bmp(string outfile_name) {
   return 0;
 }
 
-// void Testbench::do_gauss() {
-//   int x, y, v, u;        // for loop counter
-//   unsigned char R, G, B; // color of R, G, B
-//   int adjustX, adjustY, xBound, yBound;
-//   int r_total, g_total, b_total;
-// 
-//   o_rst.write(false);
-//   wait(5);
-//   o_rst.write(true);
-//   for (y = 0; y != height; ++y) {
-//     for (x = 0; x != width; ++x) {
-//       adjustX = (MASK_X % 2) ? 1 : 0; // 1
-//       adjustY = (MASK_Y % 2) ? 1 : 0; // 1
-//       xBound = MASK_X / 2;            // 1
-//       yBound = MASK_Y / 2;            // 1
-// 
-//       for (v = -yBound; v != yBound + adjustY; ++v) {   //-1, 0, 1
-//         for (u = -xBound; u != xBound + adjustX; ++u) { //-1, 0, 1
-// // std::cout << "(x, y, u, v) = " << x << ", " << y << ", " << u << ", " << v << std::endl;
-//           if (x + u >= 0 && x + u < width && y + v >= 0 && y + v < height) {
-//             R = *(source_bitmap +
-//                   bytes_per_pixel * (width * (y + v) + (x + u)) + 2);
-//             G = *(source_bitmap +
-//                   bytes_per_pixel * (width * (y + v) + (x + u)) + 1);
-//             B = *(source_bitmap +
-//                   bytes_per_pixel * (width * (y + v) + (x + u)) + 0);
-//           } else {
-//             R = 0;
-//             G = 0;
-//             B = 0;
-//           }
-//           o_r.write(R);
-//           o_g.write(G);
-//           o_b.write(B);
-// // std::cout << "(R, G, B) = " << int(R) << ", " << int(G) << ", " << int(B) << std::endl;
-//         }
-//       }
-// 
-//       r_total = i_result_r.read();
-//       g_total = i_result_g.read();
-//       b_total = i_result_b.read();
-// 
-//       *(target_bitmap + bytes_per_pixel * (width * y + x) + 2) = r_total;
-//       *(target_bitmap + bytes_per_pixel * (width * y + x) + 1) = g_total;
-//       *(target_bitmap + bytes_per_pixel * (width * y + x) + 0) = b_total;
-//     }
-//   }
-//   sc_stop();
-// }
-
 void Testbench::do_gauss() {
   int x, y, a, b;               // for loop counter
   unsigned char R, G, B;  // color of R, G, B
