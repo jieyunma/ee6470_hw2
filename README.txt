@@ -11,12 +11,12 @@ File Structure:
   |   |-- filter_def.h
  
 How to run? (use lena_std_short.bmp as input image)
-  1 change directory to gaussian_sc, type "cd gaussian_sc"
-  2 build new directory, type "mkdir build".
-  3 change directory to build, type "cd build"
-  3 type "cmake ..".
-  3 type "make run".
-  4 you will get output image "out.bmp".
+  1. change directory to gaussian_sc, type "cd gaussian_sc"
+  2. build new directory, type "mkdir build".
+  3. change directory to build, type "cd build"
+  4. type "cmake ..".
+  5. type "make run".
+  6. you will get output image "out.bmp".
 
 
 
