@@ -1,14 +1,17 @@
 File Structure:
-  |-- hw2_report.pdf
-  |-- lena_std_short.bmp
-  |-- guassian_sc
-  |   |-- CMakeLists.txt
-  |   |-- main.cpp
-  |   |-- Testbench.h
-  |   |-- Testbench.cpp
-  |   |-- GaussFilter.h
-  |   |-- GaussFilter.cpp
-  |   |-- filter_def.h
+  |-- ee6470_hw2
+  |   |-- report.md
+  |   |-- README
+  |   |-- hw2_report.pdf
+  |   |-- lena_std_short.bmp
+  |   |-- guassian_sc
+  |   |   |-- CMakeLists.txt
+  |   |   |-- main.cpp
+  |   |   |-- Testbench.h
+  |   |   |-- Testbench.cpp
+  |   |   |-- GaussFilter.h
+  |   |   |-- GaussFilter.cpp
+  |   |   |-- filter_def.h
  
 How to run? (use lena_std_short.bmp as input image)
   1. change directory to gaussian_sc, type "cd gaussian_sc"
